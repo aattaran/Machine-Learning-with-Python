@@ -1,0 +1,10 @@
+Splitting a dataset into training and testing data is very easy with sklearn. All we need is the command train_test_split. The function takes as inputs X and y, and returns four things:
+
+X_train: The training input
+X_test: The testing input
+y_train: The training labels
+y_test: The testing labels
+The call to the function looks as follows:
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25)
