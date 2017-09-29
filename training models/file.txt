@@ -1,0 +1,5 @@
+Statistics Refresher
+In this class, we'll assume familiarity with concepts in statistics such as mean, median, variance, etc. If it's been a while since you learned these and you feel that you need a refresher, here are some videos and quizzes in the Extracurricular Section which we encourage you to check out.
+
+Measures of Central Tendency: Mean, Median, Mode.
+Variability of Data: Inter Quartile Range, Outliers, Standard Deviation, Bessel's Correction.
