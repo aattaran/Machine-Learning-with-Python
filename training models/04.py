@@ -2,7 +2,7 @@ import pandas
 import numpy
 
 # Read the data
-data = pandas.read_csv('data.csv')
+data = pandas.read_csv('data2.csv')
 
 # Split the data into X and y
 X = numpy.array(data[['x1', 'x2']])
