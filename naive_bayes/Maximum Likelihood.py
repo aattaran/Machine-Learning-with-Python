@@ -21,11 +21,14 @@ def NextWordProbability(sampletext,word):
     sampletext=sampletext.translate(string.maketrans("",""),string.punctuation)
     dic={}
     lis = [i.lower() for i in sampletext.split()]
-    new_st = sampletext.split(word)[1]
-    lis = [i.lower() for i in new_st.split()]
+    #new_st = sampletext.split(word)[1]
+    #lis = [i.lower() for i in new_st.split()]
     for n,i in enumerate(lis):
-        dic[i] = dic.get(word,0)+1
+        if i==word and n < len(lis)-1:
+            dic[lis[n+1]] = dic.get(lis[n+1],0)+1
+            
+    for k,v in dic.items():
+        dic[k]=v / float(sum(dic.values()))
         
     return dic
     
-NextWordProbability(sample_memo,"gonna")
