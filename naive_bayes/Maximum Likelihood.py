@@ -32,3 +32,9 @@ def NextWordProbability(sampletext,word):
         
     return dic
     
+
+    import collections 
+def NextWordProbability(sampletext,word):
+    words = sampletext.split()
+    word_freq_after_word=[words[num+1] for num,i in enumerate(words) if words[num]==word and num <len(words)]
+    return collections.Counter(word_freq_after_word)
